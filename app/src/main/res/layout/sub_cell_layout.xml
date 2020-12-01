@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        
+        <variable
+            name="exchangeCurrency"
+            type="com.example.brainvire.model.ExchangeCurrency"/>
+        
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:background="@drawable/background_border"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="SAS"
+            android:textSize="12dp"
+            android:text="@{exchangeCurrency.exchangeCurrency}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1.45364565"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="@{exchangeCurrency.exchangeValue.toString()}"/>
+
+
+    </LinearLayout>
+
+</layout>
